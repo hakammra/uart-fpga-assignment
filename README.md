@@ -24,6 +24,6 @@ The design was implemented on a DE0-Nano FPGA board and verified using 7-segment
 ## Author
 
 Group Members:
-- GUNASEKARA L.U.A. 230212H
-- GUNATHUNGA U.A. 230218G
-- HAKAM M.R.A. 230224V
+- GUNASEKARA L.U.A.
+- GUNATHUNGA U.A.
+- HAKAM M.R.A.

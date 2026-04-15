@@ -1,4 +1,5 @@
 `timescale 1ns/1ps
+
 module uart_tb();
     reg [3:0] tb_switches;
     reg tb_send;
@@ -11,6 +12,8 @@ module uart_tb();
     wire [7:0] tb_leds;
     wire [6:0] tb_tx_seg;
     wire [6:0] tb_rx_seg;
+
+    
     uart_core #(
         .CLOCKS_PER_PULSE(16)
     ) dut (
@@ -27,6 +30,8 @@ module uart_tb();
         .tx_seg_out(tb_tx_seg),
         .rx_seg_out(tb_rx_seg)
     );
+
+    
     always #5 tb_clk = ~tb_clk;
     localparam RX_TIMEOUT = 12 * 16 + 20;
     task send_nibble(input [3:0] value);
